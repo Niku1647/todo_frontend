@@ -7,21 +7,42 @@ function App() {
   const [name, setName]=useState([])
   const increment =  () =>{
     
-    let x = document.getElementById('i').value
+    let x = document.getElementById('text').value
     
     setName([...name,x])
     
     
 
   }
+  const remove = (e) =>{
+    
+      
+      
+       
+
+       const arr = name.filter(item => item !== name[parseInt(e.target.name)] )
+
+       setName(arr)
+
+
+      
+  
+    
+    
+
+  }
   return (
     <div className="App">
-      <textarea id="i"></textarea>
+      <textarea id="text"></textarea>
      <button onClick={increment}>Click Me</button>
   <ul>{name.map((item,i)=>{
-    return <li>{item}</li>
+    return <div  key={i} >
+      <li >{item}</li>
+      <button name={i} onClick={remove}>Remove</button>
+      </div>
   })}
        </ul>
+
         
       
        
