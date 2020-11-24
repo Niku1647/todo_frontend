@@ -1,3 +1,59 @@
-.todo_class{
-  display:flex;
+button {
+  border: 0;
+  background-color: white;
+}
+button:focus {
+  outline: none;
+}
+.todo_class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(68, 68, 149);
+  border: 2px solid white;
+  max-width: 400px;
+  border-radius: 5px;
+
+  font-size: large;
+}
+.todo_class button {
+  background-color: rgb(68, 68, 149);
+  color: rgb(228, 199, 106);
+  font-size: large;
+}
+.update_class {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+img:hover {
+  cursor: pointer;
+  background-color: white;
+}
+.edit:hover {
+  cursor: pointer;
+  background-color: black;
+  border-radius: 30px;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  color: rgb(228, 199, 106);
+}
+
+#contanier {
+  border: 5px solid black;
+  border-radius: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    49deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(149, 141, 141, 0.9878326330532213) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 30px;
+  min-height: 500px;
+  margin-top: 10px;
+}
+h1 {
+  text-align: center;
 }
