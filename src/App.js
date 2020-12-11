@@ -52,8 +52,8 @@ function App() {
   };
   const edit = (e) => {
     setDisplay(false);
-    let c = parseInt(e.target.name);
-    setCount(c);
+    let edit_item = parseInt(e.target.name);
+    setCount(edit_item);
   };
   const handleDiv = (e) => {
     document.getElementById(parseInt(e.target.name)).style.textDecoration =
